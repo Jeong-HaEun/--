@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Freelancer — 문의</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">⚡ AI Freelancer</a>
+    <ul class="nav-links">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="about.html">소개</a></li>
+      <li><a href="services.html">서비스</a></li>
+      <li><a href="portfolio.html">포트폴리오</a></li>
+      <li><a href="contact.html">문의</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- 히어로 -->
+<section class="contact-hero">
+  <div class="container">
+    <span class="badge fade-in">Contact</span>
+    <h1 class="fade-in">함께 <span style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">시작해봐요</span></h1>
+    <p class="fade-in">첫 상담은 완전 무료입니다. 어떤 AI 서비스가 필요한지 함께 찾아드립니다.</p>
+  </div>
+</section>
+
+<!-- 연락처 + 폼 -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- 왼쪽: 연락처 정보 -->
+      <div class="contact-info fade-in">
+        <div class="info-card">
+          <div class="info-icon">📧</div>
+          <div>
+            <h4>이메일</h4>
+            <p>hello@aifreelancer.kr</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">보통 24시간 내 답변</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📱</div>
+          <div>
+            <h4>카카오톡</h4>
+            <p>@aifreelancer</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">평일 오전 9시 ~ 오후 6시</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🌐</div>
+          <div>
+            <h4>원격 미팅</h4>
+            <p>Zoom / Google Meet</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">30분 무료 상담 가능</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🕐</div>
+          <div>
+            <h4>응답 시간</h4>
+            <p>평균 4시간 이내</p>
+            <p style="font-size:0.82rem; color:var(--text-muted);">주말 포함 가능</p>
+          </div>
+        </div>
+
+        <div style="margin-top:8px;">
+          <p style="font-size:0.88rem; font-weight:600; margin-bottom:10px; color:var(--text-muted);">소셜 미디어</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="LinkedIn">in</a>
+            <a href="#" class="social-link" title="Instagram">📷</a>
+            <a href="#" class="social-link" title="X/Twitter">𝕏</a>
+            <a href="#" class="social-link" title="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="card fade-in" style="margin-top:8px; padding:22px; background:var(--bg-card2);">
+          <h4 style="font-size:0.9rem; margin-bottom:10px;">⏱ 현재 수주 현황</h4>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite;"></div>
+            <span style="font-size:0.88rem; color:var(--text-muted);">신규 프로젝트 수락 가능</span>
+          </div>
+          <p style="font-size:0.82rem; color:var(--text-muted);">현재 2~3개 슬롯 남아있습니다.</p>
+        </div>
+      </div>
+
+      <!-- 오른쪽: 문의 폼 -->
+      <div class="contact-form fade-in">
+        <h2 style="font-size:1.4rem; font-weight:800; margin-bottom:8px;">프로젝트 문의하기</h2>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:28px;">자세히 적을수록 더 정확한 제안을 드릴 수 있습니다.</p>
+
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">이름 *</label>
+              <input type="text" id="name" placeholder="홍길동" required>
+            </div>
+            <div class="form-group">
+              <label for="company">회사/브랜드</label>
+              <input type="text" id="company" placeholder="(선택)">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">이메일 *</label>
+              <input type="email" id="email" placeholder="hello@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">연락처</label>
+              <input type="tel" id="phone" placeholder="010-0000-0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">필요한 서비스 *</label>
+            <select id="service" required>
+              <option value="" disabled selected>서비스를 선택해주세요</option>
+              <option value="content">AI 콘텐츠 제작</option>
+              <option value="automation">업무 자동화 구축</option>
+              <option value="design">AI 비주얼 디자인</option>
+              <option value="analysis">데이터 분석</option>
+              <option value="consulting">AI 전략 컨설팅</option>
+              <option value="package">올인원 패키지</option>
+              <option value="other">기타 (직접 작성)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">예산 범위</label>
+            <select id="budget">
+              <option value="" disabled selected>예산을 선택해주세요 (선택)</option>
+              <option value="under50">50만원 이하</option>
+              <option value="50-100">50~100만원</option>
+              <option value="100-300">100~300만원</option>
+              <option value="300-500">300~500만원</option>
+              <option value="over500">500만원 이상</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">프로젝트 상세 내용 *</label>
+            <textarea id="message" placeholder="어떤 문제를 해결하고 싶으신가요? 현재 상황, 목표, 희망 일정 등을 자유롭게 적어주세요." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">문의 보내기 →</button>
+        </form>
+
+        <div class="success-msg" id="successMsg">
+          ✅ 문의가 성공적으로 접수되었습니다!<br>
+          <span style="font-size:0.9rem; font-weight:400; margin-top:6px; display:block; color:var(--text-muted);">24시간 내 이메일로 답변드리겠습니다. 감사합니다!</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background: rgba(26,26,46,0.4);">
+  <div class="container">
+    <span class="badge fade-in">FAQ</span>
+    <h2 class="section-title fade-in">자주 묻는 질문</h2>
+    <p class="section-sub fade-in">궁금한 점이 있으시면 편하게 문의해 주세요.</p>
+    <div class="faq-list">
+
+      <div class="faq-item fade-in">
+        <button class="faq-q">AI를 사용한다고 하면 품질이 떨어지지 않나요? <span class="arrow">▾</span></button>
+        <div class="faq-a">AI는 초안을 만들고 아이디어를 확장하는 데 사용하며, 전문가의 검토와 수정을 거쳐 납품합니다. 오히려 더 많은 시간을 품질 개선에 쓸 수 있어 결과물 수준이 높아집니다. 모든 결과물은 사람이 책임집니다.</div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-q">작업 기간은 얼마나 걸리나요? <span class="arrow">▾</span></button>
+        <div class="faq-a">프로젝트 규모에 따라 다르지만, 일반적으로 콘텐츠 1건 1~2일, 자동화 구축 3~7일, 데이터 분석 5~10일입니다. 긴급 처리도 가능하니 상담 시 말씀해 주세요.</div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-q">수정은 몇 번까지 가능한가요? <span class="arrow">▾</span></button>
+        <div class="faq-a">기본적으로 2회 무료 수정이 포함됩니다. 방향이 크게 바뀌는 수정은 협의 후 진행합니다. 처음 상담에서 요구사항을 명확히 정리하면 수정 횟수가 줄어듭니다.</div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-q">결제는 어떻게 이루어지나요? <span class="arrow">▾</span></button>
+        <div class="faq-a">계약금 50%를 선불로 받고, 최종 납품 후 나머지 50%를 받습니다. 월 단위 구독형 서비스는 매월 첫날 결제합니다. 계좌이체, 카드결제 모두 가능합니다.</div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-q">장기 계약이 아니어도 되나요? <span class="arrow">▾</span></button>
+        <div class="faq-a">물론입니다. 단건 프로젝트부터 장기 파트너십까지 모두 가능합니다. 다만 지속적인 협력을 통해 브랜드를 깊이 이해할수록 결과물의 품질이 높아집니다.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+</style>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size:1.15rem;">⚡ AI Freelancer</a>
+        <p>AI를 무기로 자유롭고 수익성 높은 프리랜서 커리어를 만들어 드립니다.</p>
+      </div>
+      <div class="footer-col">
+        <h4>페이지</h4>
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="services.html">서비스</a></li>
+          <li><a href="portfolio.html">포트폴리오</a></li>
+          <li><a href="contact.html">문의</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>연락</h4>
+        <ul>
+          <li><a href="mailto:hello@aifreelancer.kr">이메일 보내기</a></li>
+          <li><a href="#">카카오톡 채널</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AI Freelancer. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
